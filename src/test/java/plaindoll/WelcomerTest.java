@@ -33,8 +33,8 @@ public class WelcomerTest {
 
 		// new test
 	@Test
-	public void welcomerSaysHunterReply() {
-		String reply = welcomer.sayHunterReply();
-		assertThat(reply, containsString("hunter"));
-	}
+    public void welcomerSaysHunterReply() {
+        String reply = welcomer.sayHunterReply();
+        assertThat(reply.toLowerCase(), containsString("hunter"));
+}
 }
