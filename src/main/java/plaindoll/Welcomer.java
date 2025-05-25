@@ -13,4 +13,17 @@ public class Welcomer{
 	public String saySome(){
 		return "something in the way";
 	}
+
+	    // new method
+    public String sayHunterReply() {
+        String[] replies = {
+            "Hunter, your skills are unmatched.",
+            "The hunter always knows the path.",
+            "Beware, hunter, the night is dark.",
+            "Every hunter has their secret.",
+            "Good hunter, your journey continues."
+        };
+        int index = (int) (Math.random() * replies.length);
+        return replies[index];
+    }
 }
